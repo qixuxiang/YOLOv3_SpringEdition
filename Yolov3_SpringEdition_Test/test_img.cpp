@@ -1,7 +1,8 @@
 #include"YOLOv3SE.h"
 void Yolo3Test() {
 	YOLOv3 detector;
-	detector.Create("darknet53.weights", "darknet53_coco.cfg", "coco.names");
+	detector.Create("yolov3.weights", "cfg/yolov3.cfg", "coco.names");
+	//detector.Create("darknet53.weights", "darknet53_coco.cfg", "coco.names");
 	//detector.Create("darknet53_416_random_10000.weights", "darknet53_voc.cfg", "voc2007.names");
 	//detector.Create("darknet19.weights", "darknet19.cfg", "voc2007.names");
 	
