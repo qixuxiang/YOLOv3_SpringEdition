@@ -1,1 +1,1 @@
-/usr/bin/g++-5 test.cpp -std=c++11 -I/usr/local/include/opencv -I/usr/local/include  -L/usr/local/lib  -lopencv_stitching -lopencv_objdetect -lopencv_superres -lopencv_videostab -lopencv_calib3d -lopencv_features2d -lopencv_highgui  -lopencv_photo -lopencv_ml -lopencv_imgproc -lopencv_flann -lopencv_core -ldl  -Wl,-rpath,. -o test
+/usr/bin/g++-5 test.cpp -std=c++11 `pkg-config --cflags --libs opencv` -ldl  -Wl,-rpath,. -o test
